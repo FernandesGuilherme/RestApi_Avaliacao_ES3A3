@@ -3,6 +3,7 @@ package org.example.project.api.funcionarios;
 //Class que recebe requisições HTTP
 
 import jakarta.ws.rs.*;
+
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.Status;
