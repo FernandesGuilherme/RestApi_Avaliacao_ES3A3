@@ -16,11 +16,14 @@ public class ProjetoRepository {
     public List <Projeto> getAll (){
         return projetos;
     }
+
+
     public Projeto getById(int id) {
         return projetos.stream()
                 .filter(projetos -> projetos.getId() == id)
                 .findAny().orElse(null);
     }
+
     public  Projeto update (Projeto projeto){
         Projeto projetoFound = getById(projeto.getId());
         int index = projetos.indexOf(projetoFound);

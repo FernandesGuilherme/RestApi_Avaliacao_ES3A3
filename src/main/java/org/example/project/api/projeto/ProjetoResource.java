@@ -5,9 +5,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.Status;
-import org.example.project.api.funcionarios.FuncionarioRequest;
-import org.example.project.api.funcionarios.FuncionarioResponse;
-import org.example.project.api.funcionarios.Funcionarios;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +28,8 @@ public class ProjetoResource {
                 projetos.getData_fim())).build();
 
     }
-    /*
+
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response index (){
@@ -38,9 +37,9 @@ public class ProjetoResource {
         List <ProjetoResponse> projetoResponses = projetoRepository.getAll().stream()
                 .map(ProjetoResponse::new).collect(Collectors.toList());
 
-        return Response.status(Status.OK).entity(projetoRepository).build();
-
+        return Response.status(Status.OK).entity(projetoResponses).build();
     }
+
 
     @GET
     @Path("{id}")
@@ -48,13 +47,16 @@ public class ProjetoResource {
     public Response show (@PathParam("id") int id){
         Projeto proj = projetoRepository.getById(id);
 
-        if (fun == null){
+        if (proj == null){
             return Response.status(Status.NOT_FOUND).build();
         }
         return Response.status(Status.OK)
                 .entity(new ProjetoResponse(proj))
                 .build();
     }
+    /*
+
+
 
     @PUT
     @Path("{id}")
@@ -82,17 +84,13 @@ public class ProjetoResource {
         projetoRepository.delete(proj);
         return Response.status(Status.NO_CONTENT).build();
     }
-
-
-
- */
-
 }
 
 
 
 
 
-
+*/
 
 }
+

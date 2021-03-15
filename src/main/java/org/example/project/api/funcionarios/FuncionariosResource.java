@@ -31,6 +31,7 @@ public class FuncionariosResource {
         return Response.status(Response.Status.CREATED).entity(new FuncionarioResponse(funcionarios.getId(), funcionarios.getCPF(), funcionarios.getNome(),
                 funcionarios.getEmail(), funcionarios.getCodigo_departamento())).build();
     }
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response index (){
