@@ -54,7 +54,7 @@ public class ProjetoResource {
                 .entity(new ProjetoResponse(proj))
                 .build();
     }
-    /*
+
 
 
 
@@ -74,6 +74,7 @@ public class ProjetoResource {
         projetoRepository.update(newProjeto);
         return Response.status(Status.OK).entity(new ProjetoResponse(newProjeto)).build();
     }
+
     @DELETE
     @Path("id")
     public Response delete (@PathParam("id") int id) {
@@ -87,10 +88,4 @@ public class ProjetoResource {
 }
 
 
-
-
-
-*/
-
-}
 
