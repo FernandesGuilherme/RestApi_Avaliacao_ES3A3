@@ -2,14 +2,14 @@ org/example/project/TesteResource.java
  org.example.project.TesteResource
 org/example/project/api/projeto/ProjetoResponse.java
  org.example.project.api.projeto.ProjetoResponse
-org/example/project/api/funcionarios/Funcionarios.java
- org.example.project.api.funcionarios.Funcionarios
+org/example/project/api/projeto/ProjetoResource.java
+ org.example.project.api.projeto.ProjetoResource
 org/example/project/App.java
  org.example.project.App
 org/example/project/api/funcionarios/FuncionarioRequest.java
  org.example.project.api.funcionarios.FuncionarioRequest
-org/example/project/api/funcionarios/FuncionariosResource.java
- org.example.project.api.funcionarios.FuncionariosResource
+org/example/project/api/projeto/ProjetoRepository.java
+ org.example.project.api.projeto.ProjetoRepository
 org/example/project/api/funcionarios/FuncionarioResponse.java
  org.example.project.api.funcionarios.FuncionarioResponse
 org/example/project/api/funcionarios/FuncionarioRepositoy.java
@@ -18,7 +18,7 @@ org/example/project/api/projeto/Projeto.java
  org.example.project.api.projeto.Projeto
 org/example/project/api/projeto/ProjetoRequest.java
  org.example.project.api.projeto.ProjetoRequest
-org/example/project/api/projeto/ProjetoRepository.java
- org.example.project.api.projeto.ProjetoRepository
-org/example/project/api/projeto/ProjetoResource.java
- org.example.project.api.projeto.ProjetoResource
+org/example/project/api/funcionarios/FuncionariosResource.java
+ org.example.project.api.funcionarios.FuncionariosResource
+org/example/project/api/funcionarios/Funcionarios.java
+ org.example.project.api.funcionarios.Funcionarios

@@ -29,24 +29,20 @@ public class ProjetoResource {
 
     }
 
-
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response index (){
-
         List <ProjetoResponse> projetoResponses = projetoRepository.getAll().stream()
                 .map(ProjetoResponse::new).collect(Collectors.toList());
 
         return Response.status(Status.OK).entity(projetoResponses).build();
     }
 
-
     @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response show (@PathParam("id") int id){
         Projeto proj = projetoRepository.getById(id);
-
         if (proj == null){
             return Response.status(Status.NOT_FOUND).build();
         }
@@ -54,9 +50,6 @@ public class ProjetoResource {
                 .entity(new ProjetoResponse(proj))
                 .build();
     }
-
-
-
 
     @PUT
     @Path("{id}")
@@ -74,7 +67,6 @@ public class ProjetoResource {
         projetoRepository.update(newProjeto);
         return Response.status(Status.OK).entity(new ProjetoResponse(newProjeto)).build();
     }
-
     @DELETE
     @Path("id")
     public Response delete (@PathParam("id") int id) {

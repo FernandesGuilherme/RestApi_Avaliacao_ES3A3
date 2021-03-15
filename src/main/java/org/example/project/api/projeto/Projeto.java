@@ -17,6 +17,8 @@ public class Projeto {
         this.data_fim = data_fim;
     }
 
+
+
     public Projeto(int id, int codigo, String titulo, String data_Inicio, String data_fim) {
         this.id = id;
         this.codigo = codigo;
@@ -24,6 +26,7 @@ public class Projeto {
         this.data_Inicio = data_Inicio;
         this.data_fim = data_fim;
     }
+
 
     public int getId() {
         return id;
